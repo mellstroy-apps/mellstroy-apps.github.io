@@ -103,12 +103,11 @@ section{margin:60px 0}
 .promo-card a{display:inline-block;font-size:.82rem;font-weight:700;color:var(--accent-bright);border:1px solid var(--accent-bright);border-radius:8px;padding:7px 16px}
 
 .slot-grid{display:grid;grid-template-columns:repeat(5,minmax(0,150px));gap:14px;margin-top:20px;justify-content:center}
-.slot-card{background:var(--surface);border:1px solid var(--edge);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:border-color .2s,transform .2s}
-.slot-card:hover{border-color:var(--gold-bright);transform:translateY(-3px)}
-.slot-thumb{width:100%;aspect-ratio:3/4;object-fit:cover;display:block;background:var(--surface-2)}
-.slot-name{padding:10px 12px 2px;font-weight:700;font-size:.85rem}
-.slot-play{margin:6px 12px 12px;text-align:center;background:var(--edge);border-radius:8px;padding:8px;font-size:.8rem;font-weight:700;color:var(--ink)}
-.slot-card:hover .slot-play{background:linear-gradient(120deg,var(--accent),var(--accent-bright));color:#fff}
+.slot-card{position:relative;display:block;border-radius:10px;overflow:hidden;transition:transform .2s}
+.slot-card:hover{transform:translateY(-3px)}
+.slot-thumb{width:100%;aspect-ratio:3/4;object-fit:cover;display:block;background:var(--surface-2);border-radius:10px}
+.slot-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(18,16,31,.72);opacity:0;transition:opacity .2s;font-weight:800;font-size:.9rem;color:#fff;border-radius:10px}
+.slot-card:hover .slot-overlay{opacity:1}
 
 .faq-item{background:var(--surface);border:1px solid var(--edge);border-radius:14px;padding:20px 22px;margin-bottom:12px}
 .faq-item h3{margin:0 0 8px;font-size:1.02rem}
@@ -208,53 +207,43 @@ footer .age{display:inline-flex;align-items:center;justify-content:center;width:
   <div class="slot-grid">
     <a class="j-aff slot-card" href="#" target="_blank" rel="nofollow noopener sponsored">
       <img class="slot-thumb" src="https://cdn.gmbl.org.uk/vs20chickdrop.webp" alt="Chicken Drop" width="290" height="386" loading="lazy">
-      <div class="slot-name">Chicken Drop</div>
-      <div class="slot-play">Играть</div>
+      <div class="slot-overlay">Играть</div>
     </a>
     <a class="j-aff slot-card" href="#" target="_blank" rel="nofollow noopener sponsored">
       <img class="slot-thumb" src="https://cdn.gmbl.org.uk/candy-rush.webp" alt="Candy Rush" width="290" height="386" loading="lazy">
-      <div class="slot-name">Candy Rush</div>
-      <div class="slot-play">Играть</div>
+      <div class="slot-overlay">Играть</div>
     </a>
     <a class="j-aff slot-card" href="#" target="_blank" rel="nofollow noopener sponsored">
       <img class="slot-thumb" src="https://cdn.gmbl.org.uk/vs243caishien.webp" alt="Caishen's Cash" width="290" height="386" loading="lazy">
-      <div class="slot-name">Caishen's Cash</div>
-      <div class="slot-play">Играть</div>
+      <div class="slot-overlay">Играть</div>
     </a>
     <a class="j-aff slot-card" href="#" target="_blank" rel="nofollow noopener sponsored">
       <img class="slot-thumb" src="https://cdn.gmbl.org.uk/vs20swbon2500.webp" alt="Sweet Bonanza" width="290" height="386" loading="lazy">
-      <div class="slot-name">Sweet Bonanza</div>
-      <div class="slot-play">Играть</div>
+      <div class="slot-overlay">Играть</div>
     </a>
     <a class="j-aff slot-card" href="#" target="_blank" rel="nofollow noopener sponsored">
       <img class="slot-thumb" src="https://cdn.gmbl.org.uk/vs20olympx.webp" alt="Gates of Olympus" width="290" height="386" loading="lazy">
-      <div class="slot-name">Gates of Olympus</div>
-      <div class="slot-play">Играть</div>
+      <div class="slot-overlay">Играть</div>
     </a>
     <a class="j-aff slot-card" href="#" target="_blank" rel="nofollow noopener sponsored">
       <img class="slot-thumb" src="https://cdn.gmbl.org.uk/wild-bounty-showdown.webp" alt="Wild Bounty Showdown" width="290" height="386" loading="lazy">
-      <div class="slot-name">Wild Bounty Showdown</div>
-      <div class="slot-play">Играть</div>
+      <div class="slot-overlay">Играть</div>
     </a>
     <a class="j-aff slot-card" href="#" target="_blank" rel="nofollow noopener sponsored">
       <img class="slot-thumb" src="https://cdn.gmbl.org.uk/vs12bgrbspl.webp" alt="Bigger Bass Splash" width="290" height="386" loading="lazy">
-      <div class="slot-name">Bigger Bass Splash</div>
-      <div class="slot-play">Играть</div>
+      <div class="slot-overlay">Играть</div>
     </a>
     <a class="j-aff slot-card" href="#" target="_blank" rel="nofollow noopener sponsored">
       <img class="slot-thumb" src="https://cdn.gmbl.org.uk/vs10bbbnz1000.webp" alt="Big Bass Bonanza 1000" width="290" height="386" loading="lazy">
-      <div class="slot-name">Big Bass Bonanza 1000</div>
-      <div class="slot-play">Играть</div>
+      <div class="slot-overlay">Играть</div>
     </a>
     <a class="j-aff slot-card" href="#" target="_blank" rel="nofollow noopener sponsored">
       <img class="slot-thumb" src="https://cdn.gmbl.org.uk/vs10bbwcup.webp" alt="Big Bass World Cup" width="290" height="386" loading="lazy">
-      <div class="slot-name">Big Bass World Cup</div>
-      <div class="slot-play">Играть</div>
+      <div class="slot-overlay">Играть</div>
     </a>
     <a class="j-aff slot-card" href="#" target="_blank" rel="nofollow noopener sponsored">
       <img class="slot-thumb" src="https://cdn.gmbl.org.uk/aztec-1000.webp" alt="Aztec 1000" width="290" height="386" loading="lazy">
-      <div class="slot-name">Aztec 1000</div>
-      <div class="slot-play">Играть</div>
+      <div class="slot-overlay">Играть</div>
     </a>
   </div>
 </section>
