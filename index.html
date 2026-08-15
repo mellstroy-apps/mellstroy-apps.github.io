@@ -83,7 +83,7 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:20px 2
 .btn-primary{display:inline-block;background:linear-gradient(120deg,var(--accent),var(--accent-bright));color:#fff;padding:16px 38px;border-radius:14px;font-weight:800;font-size:1.05rem;box-shadow:0 10px 30px rgba(182,51,254,.35)}
 .btn-primary:hover{filter:brightness(1.08)}
 .hero-stats{display:flex;justify-content:center;gap:36px;margin-top:44px;flex-wrap:wrap}
-.stat{text-align:center}
+.stat{text-align:center;background:var(--surface);border:1px solid var(--edge);border-radius:14px;padding:14px 10px}
 .stat-num{font-size:1.5rem;font-weight:900;background:linear-gradient(120deg,var(--gold-bright),var(--accent-bright));-webkit-background-clip:text;background-clip:text;color:transparent}
 .stat-label{font-size:.82rem;color:var(--ink-dim);margin-top:2px}
 
@@ -135,7 +135,8 @@ footer .age{display:inline-flex;align-items:center;justify-content:center;width:
   .hero-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:22px 16px;justify-items:center}
   .stat-num{font-size:1.2rem}
   .wrap{padding:0 16px}
-  section{margin:44px 0}
+  section{margin:56px 0;padding-top:8px;border-top:1px solid var(--edge)}
+  section.hero{border-top:none;padding-top:0}
   .promo-strip{grid-template-columns:repeat(2,1fr);gap:12px}
   .promo-card{padding:16px}
   .slot-grid{grid-template-columns:repeat(2,minmax(0,150px));gap:12px}
