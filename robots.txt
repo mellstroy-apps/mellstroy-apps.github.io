@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mellstroy-apps.github.io/sitemap.xml
